@@ -2,10 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Khaana Services</title>
+  <title>Khaana Food Co. - Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #222; background: #fff; }
+    h1, h2 { color: #1f5fbf; }
+    .box { border: 1px solid #ccc; padding: 10px; background: #f9f9f9; }
+    .small { font-size: 14px; }
+    .big { font-size: 18px; }
+    .tag-red { color: #b91c1c; }
+    .tag-green { color: #16a34a; }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+    img { display: block; margin-top: 8px; width: 250px; }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #fff8e1; color: 333;">
-  <h1 style="color: #1388e5;"><b>Khaana's Services</b></h1>
-  <h2 style="color: #5D3fD3;">End-to-End Service from Recipe R&D to Last Mile Logistics</h2>
+<body>
+  <p class="small">
+    <a href="#top">Home</a> |
+    <a href="https://www.fda.gov/food" target="_blank" rel="noopener noreferrer">FDA Food Safety</a> |
+    <a href="mailto:hello@khaana.example?subject=Hello%20Khaana">Contact Me</a>
+  </p>
+
+  <h1 id="top">Khaana Food Co. – Services</h1>
+  <p>
+    Welcome to <b>Khaana</b>! We offer <i>simple and tasty</i> food services for small businesses.
+    Our goal is to provide <u>reliable</u> help at a fair price.
+  </p>
+
+  <div class="box">
+    <h2>Services</h2>
+    <ul>
+      <li>
+        <b>Recipe Help</b> – make simple menus that fit your budget <span class="tag-red">(new)</span>.
+        <br>
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800" alt="Recipe help" width="250">
+      </li>
+      <li>
+        <b>Ingredient Sourcing</b> – find fresh produce and common spices.
+        <br>
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800" alt="Ingredient sourcing" width="250">
+      </li>
+      <li>
+        <b>Food Safety Basics</b> – labels and clean kitchen tips.
+        <br>
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800" alt="Food safety" width="250">
+      </li>
+      <li class="big">
+        <b>Delivery</b> – local drop-offs on schedule <span class="tag-green">available</span>.
+        <br>
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800" alt="Delivery service" width="250">
+      </li>
+    </ul>
+    <p class="serif small">We try to keep things simple and clear for every order.</p>
+  </div>
+
+  <h2>How It Works</h2>
+  <ol>
+    <li>Talk about your idea and price.</li>
+    <li>Make a small test and taste it.</li>
+    <li>Buy ingredients and plan the work.</li>
+    <li>Deliver and learn from feedback.</li>
+  </ol>
+
+  <h2>Download</h2>
+  <p>
+    <a href="Khaana_Sample_Menu.txt" download>Download: Khaana Sample Menu (TXT)</a>
+  </p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:hello@khaana.example">hello@khaana.example</a></p>
+
+  <hr>
+  <p class="small">
+    Date last modified: <span id="lastModified"></span><br>
+    © <span id="year"></span> Khaana Food Co.
+  </p>
+
+  <script>
+    document.getElementById('lastModified').textContent = document.lastModified;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
